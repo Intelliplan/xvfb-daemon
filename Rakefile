@@ -52,7 +52,6 @@ task :build_pkg do
 	-C pkg
 	--name intelliplan.xvfb-daemon
 	--iteration 1
-  --depends xorg-x11-server-Xvfb
 	--category service-wrappers
 	--url https://github.com/Intelliplan/xvfb-daemond
 	--version #{ENV['FORMAL_VERSION']}
