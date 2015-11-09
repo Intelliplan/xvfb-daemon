@@ -66,7 +66,7 @@ task :publish_pkg do
 end 
 
 desc "build the rpm without publishing it"
-task :rpm_local => [:versioning, :clean, :build_pkg]
+task :rpm_local => [:versioning, :build_pkg]
 
 desc "build and publish the rpm"
 task :rpm => [:rpm_local, :publish_pkg]
